@@ -31,7 +31,7 @@ class ChocodipTopping extends IcecreamDecorator {
 	}
 	
 	public void make() {
-		super.make();
+		icecream.make();
 		System.out.print(", add choco dip topping");
 	}
 }
@@ -43,7 +43,7 @@ class SprinklesTopping extends IcecreamDecorator {
 	}
 	
 	public void make() {
-		super.make();
+		icecream.make();
 		System.out.print(", add sprinkles topping");
 	}
 }

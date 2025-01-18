@@ -2,7 +2,7 @@ package com.anju.DesignPattern.Structural.Decorator;
 
 public class DecoratorMain {
 	public static void main (String args[]) {
-		Icecream icecream = new SprinklesTopping(new ChocodipTopping(new VanillaIcecream()));
+		Icecream icecream = new SprinklesTopping(new SprinklesTopping(new ChocodipTopping(new VanillaIcecream())));
 		icecream.make();
 		
 		System.out.println();
